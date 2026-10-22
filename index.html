@@ -11,16 +11,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
-		<style>
-			/* Force le fond de la page entière à être rose pour qu'aucune coupure blanche n'apparaisse */
-			body, html {
+			<style>
+			/* 1. Force la page entière et son arrière-plan à être rose pâle */
+			html, body, #page-wrapper {
 				background-color: #ffd1dc !important;
 			}
-			/* Force la section À propos à rester blanche pour garder le contraste */
+
+			/* 2. Supprime les fonds blancs et les ombres cachés dans les sections */
+			#header, #one, .main, .wrapper, .container {
+				background-color: transparent !important;
+				background: transparent !important;
+				box-shadow: none !important;
+				border: none !important;
+			}
+
+			/* 3. Ajuste l'espacement pour que le texte respire sans créer de coupure */
+			#header {
+				padding: 4rem 0 2rem 0 !important;
+			}
 			#one {
-				background-color: #fdd1dc !important;
+				padding-top: 2rem !important;
 			}
 		</style>
+
 
 	</head>
 	<body class="is-preload">
