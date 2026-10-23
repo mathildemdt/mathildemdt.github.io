@@ -11,26 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
-			<style>
-			/* 1. Force la page entière et son arrière-plan à être rose pâle */
-			html, body, #page-wrapper {
+		<style>
+			/* 1. Force le fond de la page entière à devenir rose pâle */
+			body, html {
 				background-color: #ffd1dc !important;
 			}
 
-			/* 2. Supprime les fonds blancs et les ombres cachés dans les sections */
-			#header, #one, .main, .wrapper, .container {
-				background-color: transparent !important;
-				background: transparent !important;
-				box-shadow: none !important;
-				border: none !important;
+			/* 2. Supprime l'effet de marge ou d'espace vide sous l'en-tête rose */
+			#header {
+				background-color: #ffd1dc !important;
+				margin-bottom: 0 !important;
+				padding-bottom: 3rem !important;
 			}
 
-			/* 3. Ajuste l'espacement pour que le texte respire sans créer de coupure */
-			#header {
-				padding: 4rem 0 2rem 0 !important;
-			}
+			/* 3. Force la section "À propos" à rester bien blanche */
 			#one {
-				padding-top: 2rem !important;
+				background-color: #ffd1dc !important;
+				margin-top: 0 !important;
+				padding-top: 4rem !important;
+				position: relative;
+				z-index: 2;
 			}
 		</style>
 
